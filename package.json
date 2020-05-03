@@ -1,0 +1,26 @@
+{
+  "name": "ajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch": "forever -w server.js",
+    "prestart": "npm install",
+    "start": "forever server.js"
+  },
+  "author": "coursar",
+  "license": "MIT",
+  "engines": {
+    "node": "10.x"
+  },
+  "dependencies": {
+    "forever": "^1.0.1",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0",
+    "uuid": "^3.4.0",
+    "ws": "^7.2.5"
+  }
+}
